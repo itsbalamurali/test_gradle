@@ -1,0 +1,330 @@
+<resources>
+    <string name="app_name">Ipsidy</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+    <string name="subtotal">SUBTOTAL</string>
+    <string name="zero_amount">$ 0.00</string>
+    <string name="clear">Clear</string>
+    <string name="capture">Capture</string>
+    <string name="signature_captured_successfully">Signature captured successfully</string>
+    <string name="signature">Signature</string>
+    <string name="skip">SKIP</string>
+    <string name="print">Print</string>
+    <string name="ok">Ok</string>
+    <string name="card_details">Card Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="card_number">Card number</string>
+    <string name="expiry_date">Exp(YYMM)</string>
+    <string name="card_holder">Card holder</string>
+    <string name="amount">Amount</string>
+    <string name="na">N/A</string>
+    <string name="confirm">Confirm</string>
+    <string name="transaction_details">transaction_details</string>
+    <string name="merchant_id">124712533555928</string>
+    <string name="merchant_text">PY.co</string>
+    <string name="terminal_id">33555928</string>
+    <string name="merchant_address">1/2-3</string>
+    <string name="merchant_city">Alabama</string>
+    <string name="merchant_state">Alabama</string>
+    <string name="enter_amount">Please enter the amount to proceed</string>
+    <string name="load_money">Load Money</string>
+    <string name="load_fund">LOAD FUND</string>
+    <string name="something_wrong">There was an error processing your request. Please try again later.</string>
+    <string name="transaction_processing_state">Transaction is in processing state.</string>
+    <string name="transaction_refund_state">Transaction is Already Refunded.</string>
+    <string name="currency_dollar">USD</string>
+
+    <string-array name="help_items">
+        <item>Call Customer Care</item>
+        <item>Chat with Customer Care</item>
+        <item>Lodge a Complaint</item>
+    </string-array>
+
+    <string-array name="listOptions">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+    </string-array>
+
+    <string-array name="deviceTypes">
+        <item>Mobile</item>
+        <item>Z-90</item>
+    </string-array>
+
+    <string-array name="deviceTypesValues">
+        <item>Mobile</item>
+        <item>Z-90</item>
+    </string-array>
+
+    <string name="discount">Discount</string>
+    <string name="sale_name">Sale</string>
+    <string name="tip_name">Tip</string>
+    <string name="send_recipt">Receipt</string>
+    <string name="transaction_result">Transaction Result</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="transaction_details_name">Transaction Details</string>
+    <string name="present_card_text">Present Card</string>
+
+    <string name="history_name">History</string>
+    <string name="settings_name">Settings</string>
+    <string name="help_name">Help</string>
+    <string name="about_name">About</string>
+    <string name="logout_name">Logout</string>
+    <string name="proceed_btn">NEXT</string>
+    <string name="signature_btn">Signature</string>
+
+    <string name="manual">Manual</string>
+    <string name="total">Total</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="trans_amount">Trans Amount</string>
+    <string name="present_card">mWallet NFC</string>
+    <string name="error_transaction">Error saving transaction</string>
+
+    <!-- Customer Care  number -->
+    <string name="agent_phone_number">8147709983</string>
+    <string name="error_cc">Card number is invalid</string>
+    <string name="error_exp">Expiry date is invalid</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="enter_Ip">Enter IP</string>
+    <string name="enter_port">Enter Port</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_un">Enter UserName</string>
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="enter_terminal">Enter Terminal</string>
+    <string name="enter_merchant">Enter Merchant</string>
+    <string name="choose_protocol">Choose Protocol</string>
+    <string name="choose_Device">Choose Device</string>
+
+
+    <string name="tip">TIP</string>
+    <string name="merchant_settings">Merchant Settings</string>
+    <string name="transaction_settings">Transaction Settings</string>
+    <string name="device_type_settings">Device Type</string>
+    <string name="general_settings">General Settings</string>
+
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="username">UserName</string>
+    <string name="ip">IP</string>
+    <string name="port">PORT</string>
+    <string name="http">HTTP</string>
+    <string name="terminal">Terminal ID</string>
+    <string name="merchant">Merchant ID</string>
+    <string name="https">HTTPS</string>
+
+    <string name="key_name">name</string>
+    <string name="key_location">location</string>
+    <string name="key_mobile">mobile</string>
+    <string name="key_email">email</string>
+    <string name="key_terminal">terminalId</string>
+    <string name="key_ip">ip</string>
+    <string name="key_merchant">merchantId</string>
+    <string name="key_port">port</string>
+    <string name="key_tip">tip</string>
+    <string name="key_list">list</string>
+    <string name="key_device_list">deviceList</string>
+
+    <string name="key_device_mobile">mobileDevice</string>
+    <string name="key_device_z90">z90</string>
+    <string name="mobile_device">Mobile</string>
+    <string name="z90_device">Z-90</string>
+
+
+
+    <string name="key_address">merchantAddress</string>
+    <string name="key_city">merchantCity</string>
+    <string name="key_state">merchantState</string>
+
+    <!-- Transaction result texts -->
+    <string name="error_code">Status Code</string>
+    <string name="status">Approved</string>
+    <string name="txn_status">Status</string>
+    <string name="txn_date">Txn.Date</string>
+    <string name="txn_ref">Txn.Id.No</string>
+    <string name="txn_id">Txn ID</string>
+    <string name="txn_card_number">Card Number</string>
+    <string name="txn_card_name">Card Name</string>
+    <string name="txn_address">Address</string>
+    <string name="txn_city">City</string>
+    <string name="txn_state">State</string>
+    <string name="auth_id">Auth Code</string>
+    <string name="cg_ref">CG Ref.No</string>
+    <string name="processor_txn_id">Processor Txn ID</string>
+    <string name="merchant_code">Merchant Code</string>
+
+    <!-- Load Funds result texts -->
+    <string name="customer_account_no">Account No</string>
+    <string name="total_amount">Amount</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="payment_option_name">Payment Option</string>
+    <string name="manual_entry">Manual Entry</string>
+    <string name="mc_visa_accepted"><![CDATA[*Only Ipsidy network cards accepted]]></string>
+    <string name="error_retrieve">Failed to save the transaction</string>
+    <string name="search_hint">Search Transaction</string>
+    <string name="no_transactions">No Transactions</string>
+
+    <string name="approved">Approved</string>
+    <string name="Please_tap_wallet">Tap Customer Mobile mWallet to \n mPOS to process transaction</string>
+    <string name="please_enter_tip">Please enter the tip(%)</string>
+    <string name="waiting_for_card">Waiting for card...</string>
+
+    <string name="merchant_name">Merchant Name</string>
+    <string name="trans_type">Trans. Type</string>
+    <string name="exp_date">Exp Date</string>
+    <string name="void_name">Void</string>
+    <string name="refund_name">Refund</string>
+    <string name="voided">Voided</string>
+    <string name="refunded">Refunded</string>
+
+    <string name="processing">Processing...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="chatak_merchant_name">Chatak Merchant</string>
+
+    <string name="pan_validation">This field is required</string>
+    <string name="exp_validation">Please enter valid Expiry date</string>
+    <string name="name_validation">Enter name</string>
+    <string name="not_applicable">-NA-</string>
+
+    <!--  Bar Code/QR code -->
+    <string name="zxinglib_msg_default_status">Place QR code inside the viewfinder rectangle to scan it. </string>
+    <string name="no_scanner">No Scanner Found</string>
+    <string name="failed_read_qr">QR code format error</string>
+    <string name="qr_code_title">QR Code</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="powered_by">Powered by </string>
+    <string name="enter_username">Please enter username</string>
+    <string name="user_password">Please enter password</string>
+    <string name="error_generic">There was an error processing your request. Please try later.</string>
+    <string name="login_activity">Login Activity</string>
+    <string name="cardtap">Card Tap</string>
+    <string name="confirm_msg">You are logging out of the application?</string>
+    <string name="dialog_logout">Logout</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="login">Login</string>
+
+    <!-- Change Password Section -->
+    <string name="change_password">Change Password</string>
+    <string name="existing_pwd">Current Password *</string>
+    <string name="new_pwd">New Password *</string>
+    <string name="confirm_new_pwd">Confirm Password*</string>
+    <string name="password_change">Your Password has been successfully changed</string>
+    <string name="old_password">Please enter existing password</string>
+    <string name="new_password">Please enter new password</string>
+    <string name="confirm_password">Please enter confirm password</string>
+    <string name="pwd_match">New Password and Confirm Password do not match</string>
+    <string name="pwd_pattern">New Password should contain 1 digit, 1 lower case character, 1 upper case character, 1 special character from [ @ # $ * % ! . ]</string>
+    <string name="save">SAVE</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_pwd">Forgot password</string>
+    <!--forgot password-->
+    <string name="hint_email">Email</string>
+    <string name="hint_usename">UserName</string>
+    <string name="submit">SUBMIT</string>
+    <string name="toast_value">Please enter the Valid UserName</string>
+    <string name="error_message">Please enter the Email </string>
+    <string name="qr_sale">QR-SALE</string>
+    <string name="manual_sale">MANUAL - SALE</string>
+    <string name="nfc_sale">NFC-SALE</string>
+    <string name="sale">SALE</string>
+    <string name="venta">VENTA</string>
+    <string name="reembolo">REEMBOLSO</string>
+
+    <string name="manual_type">MANUAL</string>
+    <string name="contactless">PAN_AUTO_ENTRY_CONTACTLESS_M_CHIP</string>
+
+    <string name="error_msg">Please enter all the fields</string>
+    <string name="declined_msg">Declined</string>
+
+    <string name="account_restored">Your account has been restored!</string>
+    <string name="forgot_password_msg">Password Reset Link has been sent successfully </string>
+    <string name="change_error_msg">This password is already used in last three password changes</string>
+
+    <string name="update">Update</string>
+    <string name="alert">Alert</string>
+    <string name="device_not_registered">Device is not registred</string>
+    <string name="no_terminal_id_for_merchant">No terminal found for the merchant ID</string>
+    <string name="new_update_available">New Application update V </string>
+    <string name="please_click_for_update"> is available. Please click on Update to Continue.</string>
+    <string name="qrsale">QR_SALE</string>
+    <string name="balance">BALANCE</string>
+    <string name="card_tap">CARD_TAP</string>
+
+    <string name="balance_inquiry">Balance Inquiry</string>
+    <string name="tap_card_mpos">Tap Card to MPOS</string>
+    <string name="cvv">CVV</string>
+    <string name="pin_cvv">Enter PIN/CVV</string>
+    <string name="available_balance_name">Available Balance</string>
+    <string name="read_btn">READ</string>
+    <string name="reset_btn">RESET</string>
+
+    <string name="txn_type">Trans Type</string>
+    <string name="logout">Logout</string>
+
+    <string name="key_discount">Discount</string>
+    <string name="key_balence_enquiry">Balance Enquiry</string>
+
+    <string name="enter_account_no">Please enter valid Account number to proceed</string>
+    <string name="account_no">Enter Account Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="allowed_characters">0123456789qwertzuiop asdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM.@</string>
+
+    <string name="nfc_tap_error">Please Tap Again!!</string>
+    <string name="card_type_err">Card is not configured properly ,please contact admin team.</string>
+    <string name="nfc">NFC</string>
+    <string name="qr_code">QR Code</string>
+    <string name="entry">Entry</string>
+    <string name="dont_have_an_account">Dont\'t have an account?</string>
+    <string name="sign_up_here">Sign Up Here ></string>
+    <string name="all_rights_eserved">\u00a92018 Ipsidy. All Rights Reserved</string>
+    <string name="version_number">Version 1.0.10</string>
+    <string name="mwallet_accepted">Only Ipsidy mWallet cards accepted</string>
+
+      <!--nfc tag reader-->
+    <string name="intro_message"></string>
+    <string name="error_ms">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="no_card_data">Your Card Information is not Available !!..</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="menu_main_clear_title">Clear all</string>
+    <string name="menu_main_copy">Copy IDs</string>
+    <string name="menu_copy_hex">Hex</string>
+    <string name="menu_copy_reversed_hex">Reversed hex</string>
+    <string name="menu_copy_dec">Dec</string>
+    <string name="menu_copy_reversed_dec">Reversed dec</string>
+    <string name="nothing_scanned">Nothing scanned yet</string>
+    <string name="currency_error">Currency Not configured !!</string>
+    <string name="default_amount">0.00</string>
+    <string name="date_format">dd/MM/yyyy   hh:mm:ss a</string>
+    <string name="refund_detail">Refund Details</string>
+    <string name="enter_cvv">Enter PIN/CVV</string>
+    <string name="cvv_validation">Please enter valid CVV</string>
+    <string name="keys_length">14</string>
+    <string name="home">HOME</string>
+    <string name="refund">REFUND</string>
+    <string name="aprobado">aprobado</string>
+    <string name="discount_title">DISCOUNT</string>
+    <string name="balance_inquiry_title">BALANCE INQUIRY</string>
+    <string name="timezone">GMT</string>
+</resources>

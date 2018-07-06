@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_new_left"
+            layout="@layout/toolbar_new_left" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/button_group"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/headerlyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rlReceipt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingBottom="05dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:id="@+id/txtmasked_card_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginTop="28dp"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <TextView
+                                    android:id="@+id/card_holder_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_below="@+id/txtmasked_card_number"
+                                    android:layout_marginTop="07dp"
+                                    android:textSize="@dimen/font_medium" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlLoadMoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/txtAccount_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="@string/account_number"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <TextView
+                                    android:id="@+id/Account_Number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_below="@+id/txtAccount_number"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="@dimen/font_medium" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="25dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtMerchantName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtState"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txnno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/txn_id"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtTranNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/cgRefNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/processor_txn_id"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtRefNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/terminal"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtTerminalId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/merchant_code"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtMerchantId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/txn_date"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtDateTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/authCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/auth_id"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtAuthCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/txn_status"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtStatus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/trans_type"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/tranaAmount"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/trans_amount"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtTranAmount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/availBalance"
+                            android:visibility="gone"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/available_balance_name"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/aval_balance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="20dp"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/tip_name"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtTip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/layoutImg"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorGrayDark2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="60"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/total"
+                                    android:textAlignment="gravity"
+                                    android:textSize="@dimen/font_medium" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalAmount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="40"
+                                    android:gravity="left|center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text="$0.00"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/font_medium" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/button_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llVoidRefund"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <Button
+                            android:id="@+id/voidBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:background="@drawable/primary_button_shape"
+                            android:text="@string/void_name"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/backBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:background="@drawable/secondary_button_shape"
+                            android:text="@string/btn_backspace"
+                            android:textColor="@android:color/white" />
+
+                        <Button
+                            android:id="@+id/refundBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:background="@drawable/primary_button_shape"
+                            android:text="@string/refund_name"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOkSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/skipBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/primary_button_shape"
+                            android:text="@string/home"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

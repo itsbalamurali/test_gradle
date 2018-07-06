@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181f2f"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="23dp"
+        android:background="#141C29">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:src="@drawable/img_ipsidy_mpos" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+                android:id="@+id/sale"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="8dp"
+                    android:src="@drawable/sale" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:layout_marginStart="19dp"
+                    android:text="@string/sale_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+                android:id="@+id/loadmoney"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/load_money" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/load_money" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+                android:id="@+id/history"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/history" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/history_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+                android:id="@+id/settings"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/settings_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+
+                android:id="@+id/help"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/help" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/help_name" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+            <LinearLayout
+
+                android:id="@+id/about"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/about" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/about_name" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logout"
+                style="@style/menu_item_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/img_logout" />
+
+                <TextView
+                    style="@style/menu_item_text_slide"
+                    android:text="@string/logout_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/slider_view" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:gravity="bottom|start"
+        android:src="@drawable/img_ipsidy_wlogo" />
+
+</LinearLayout>

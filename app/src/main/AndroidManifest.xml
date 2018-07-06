@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:sharedUserId="android.uid.system"
+          package="com.girmiti.mobilepos">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <permission android:name="android.permission.SERIAL_PORT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:name=".util.FacadeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TransactionHistoryActivity"
+            android:label="@string/transaction_history"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".activity.BalanceInquiryActivity"
+            android:label="@string/balance_inquiry"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.BalanceInquiryReceiptActivity"
+            android:label="@string/balance_inquiry"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SettingsListActivity"
+            android:label="@string/settings_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.DeviceSettingsActivity"
+            android:label="@string/device_type_settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.TransactionSettings"
+            android:label="@string/transaction_settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/settings_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.HelpActivity"
+            android:label="@string/help_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/about_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.TipActivity"
+            android:label="@string/tip_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.CardWaitActivity"
+            android:label="@string/present_card_text"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.TransactionResultActivity"
+            android:label="@string/transaction_result"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ReceiptActivity"
+            android:label="@string/send_recipt"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SendReceiptActivity"
+            android:label="@string/transaction_result"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.RefundReceiptActivity"
+            android:label="@string/transaction_details_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SignatureCapture"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".activity.TransactionHistoryDetails"
+            android:launchMode="singleTop"
+            android:label="@string/transaction_result"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.LoadMoneyActivity"
+            android:label="@string/load_money"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ManualEntryActivity"
+            android:label="@string/manual_entry"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activity.LoadMoneyPhoneNoActivity"
+            android:label="@string/load_money"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:label="@string/forgot_pwd"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BaseActivity"/>
+
+        <activity
+            android:name="com.girmiti.mobilepos.qrcode.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/login_activity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.SlidingMenuActivity"
+        android:label="Sale"
+        android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.PaymentListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.CardTapActivity"
+            android:label="@string/cardtap"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+</manifest>

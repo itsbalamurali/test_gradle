@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_new_left"
+        layout="@layout/toolbar_new_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btn_nfc"
+            style="@style/outerline_green_button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:drawableEnd="@drawable/ic_nav_arrow_icon"
+            android:drawableStart="@drawable/ic_nfc_wave_icon"
+            android:text="@string/nfc"
+            android:textSize="@dimen/font_medium" />
+
+        <Button
+            android:id="@+id/readQrCode"
+            style="@style/outerline_green_button"
+            android:layout_alignStart="@+id/btn_nfc"
+            android:layout_below="@+id/btn_nfc"
+            android:layout_marginTop="35dp"
+            android:drawableEnd="@drawable/ic_nav_arrow_icon"
+            android:drawableStart="@drawable/ic_qr_code"
+            android:text="@string/qr_code"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <Button
+            android:id="@+id/manualEntry"
+            style="@style/outerline_green_button"
+            android:layout_alignStart="@+id/readQrCode"
+            android:layout_below="@+id/readQrCode"
+            android:layout_marginTop="35dp"
+            android:drawableEnd="@drawable/ic_nav_arrow_icon"
+            android:drawableStart="@drawable/ic_manual_enter_icon"
+            android:text="@string/entry"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_medium" />
+
+        <ImageView
+            android:id="@+id/imgVisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/logo_scaled" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

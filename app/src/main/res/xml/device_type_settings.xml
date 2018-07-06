@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="Mobile"
+        android:entries="@array/deviceTypes"
+        android:entryValues="@array/deviceTypesValues"
+        android:key="@string/key_device_list"
+        android:layout="@layout/preference"
+        android:summary=""
+        android:title="@string/choose_Device" />
+
+</PreferenceScreen>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ttlConn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:text="ReConnnect" />
+
+        <Button
+            android:id="@+id/icTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="tring/ic" />
+
+        <Button
+            android:id="@+id/ttlVer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:text="string/version" />
+
+        <Button
+            android:id="@+id/ttlgetSN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:text="string/getSN" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ttlnfc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:onClick="test"
+            android:text="nfcTest" />
+
+        <Button
+            android:id="@+id/ttlID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="string/ic" />
+
+        <Button
+            android:id="@+id/ttlMag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="string/mag" />
+        <Button
+            android:id="@+id/ttlCpu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="@string/update" />
+
+        <Button
+            android:id="@+id/ttlM1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:layout_marginTop="10dp"
+
+            android:text="string/rf" />
+
+        <Button
+            android:id="@+id/ttlPrn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:layout_marginTop="10dp"
+
+            android:text="string/printtest" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 		
+        <Button
+            android:id="@+id/buttonon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="ON" />
+
+        <Button
+            android:id="@+id/buttonconf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="ReadConf" />
+
+        <Button
+            android:id="@+id/ttlsetEncrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:layout_marginTop="10dp"
+
+            android:text="string/setEnc" />
+
+        <Button
+            android:id="@+id/ttlLoadKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:layout_marginTop="10dp"
+
+            android:text="loadDUKPT" />
+
+        <Button
+            android:id="@+id/ttworkKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="workKey" />
+
+		<Button
+            android:id="@+id/ttlloadSN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:layout_marginTop="10dp"
+
+            android:text="string/loadSN" />
+    </LinearLayout>
+	 
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<Button
+            android:id="@+id/ttlEncrypmac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:onClick="test"
+            android:text="ntag213card" />
+        <Button
+            android:id="@+id/buttonoff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="readNO." />
+        <Button
+            android:id="@+id/buttonpboc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:visibility="gone"
+            android:text="pboc" />
+
+
+        
+        <Button
+            android:id="@+id/ttlQRCtet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="test"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="50dp"
+            android:text="QRCode test" />
+        <Button
+            android:id="@+id/ttlBCtet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+
+            android:onClick="test"
+            android:text="passport" />
+
+    </LinearLayout>
+   
+    <LinearLayout
+        android:id="@+id/ly_apdu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+		<EditText 
+		    android:id="@+id/et_adpu"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="0084000008"/>
+		<Button
+		    android:id="@+id/bt_apdu_send"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="test"
+		    android:text="APSUsend"></Button>
+		<Button
+		    android:id="@+id/ttencryptData"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="test"
+		    android:visibility="gone"
+		    android:text="encryptData" />
+
+		
+
+		<Button
+		    android:id="@+id/ttlLoadAccount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="test"
+		    android:visibility="gone"
+		    android:text="account" />
+
+	
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

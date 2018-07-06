@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_new"
+            layout="@layout/toolbar_new"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#243040" />
+
+            <ListView
+                android:layout_below="@id/toolbar_new"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@id/list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+
+    <LinearLayout
+        android:layout_below="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:paddingTop="370dp">
+
+        <ImageView
+            android:id="@+id/ImgMc"
+            android:layout_gravity="bottom|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:src="@drawable/img_ipsidy_blogo" />
+    </LinearLayout>
+</RelativeLayout>

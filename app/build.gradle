@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.girmiti.mobilepos"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    testOptions {
+        unitTests.all {
+            setIgnoreFailures(true)
+        }
+    }
+
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    //compile 'com.google.zxing:core:3.0.0'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    androidTestCompile 'org.mockito:mockito-android:2.7.22'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.5'
+    testCompile('org.powermock:powermock-core:1.6.5')
+    testCompile('org.powermock:powermock-module-junit4:1.6.5')
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
+    androidTestCompile 'com.android.support:support-annotations:25.0.0'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    testCompile 'org.json:json:20140107'
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.6.5'
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(path: ':slidingMenu')
+    compile files('libs/guavalib.jar')
+    compile files('libs/3551.jar')
+    compile files('libs/Z90AndroidSDKv2.6.3en.jar')
+    compile files('libs/commons.jar')
+    compile files('libs/core-3.2.1.jar')
+    compile files('libs/translib.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+
+}

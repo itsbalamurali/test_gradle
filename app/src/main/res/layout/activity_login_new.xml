@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_layout" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+
+            android:padding="20dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/un"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/text_cursor_indigo"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/un"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/text_cursor_indigo"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgot"
+            style="@style/bodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwd"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="#212B3E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dnthvact"
+            style="@style/bodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/forgot"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/dont_have_an_account"
+            android:textColor="#212B3E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dnthvact"
+            android:layout_alignBottom="@+id/dnthvact"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/dnthvact"
+            android:text="@string/sign_up_here"
+            android:textColor="#3384D9"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signin_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:text="@string/all_rights_eserved" />
+
+        <Button
+            android:id="@+id/signin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
+

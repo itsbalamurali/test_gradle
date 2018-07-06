@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/merchant_settings">
+
+        <EditTextPreference
+            android:dialogTitle="@string/merchant_name"
+            android:inputType="text"
+            android:key="@string/key_name"
+            android:layout="@layout/preference"
+            android:maxLength="20"
+            android:summary=""
+            android:enabled="false"
+            android:title="@string/name"/>
+
+        <EditTextPreference
+            android:inputType="text"
+            android:key="@string/key_location"
+            android:layout="@layout/preference"
+            android:maxLength="20"
+            android:summary=""
+            android:title="@string/location"/>
+
+        <EditTextPreference
+            android:dialogTitle="@string/enter_un"
+            android:inputType="textEmailAddress"
+            android:key="@string/key_email"
+            android:layout="@layout/preference"
+            android:maxLength="50"
+            android:summary=""
+            android:enabled="false"
+            android:title="@string/username"/>
+
+        <EditTextPreference
+            android:dialogTitle="@string/enter_terminal"
+            android:inputType="number"
+            android:key="@string/key_terminal"
+            android:layout="@layout/preference"
+            android:maxLength="20"
+            android:summary=""
+            android:enabled="false"
+            android:title="@string/terminal"/>
+
+        <EditTextPreference
+            android:dialogTitle="@string/enter_merchant"
+            android:inputType="number"
+            android:key="@string/key_merchant"
+            android:maxLength="20"
+            android:enabled="false"
+            android:layout="@layout/preference"
+            android:summary=""
+            android:title="@string/merchant"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

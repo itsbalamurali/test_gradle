@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+                android:layout_marginTop="14dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="08dp"
+                android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="03dp"
+        android:paddingTop="05dp"
+        android:src="@drawable/lock_icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="@string/change_password"
+        android:paddingLeft="18dp"
+        android:layout_marginTop="07dp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/icon"
+        android:cacheColorHint="#00000000"
+        android:textSize="@dimen/font_small" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="05dp"
+        android:paddingTop="03dp"
+        android:layout_marginStart="280dp"
+        android:src="@drawable/settingsarrow" >
+    </ImageView>
+
+</RelativeLayout>

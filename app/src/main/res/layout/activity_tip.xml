@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/skipBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/primary_button_shape"
+            android:text="@string/skip"
+            android:textColor="@android:color/white"
+
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/proceedBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/secondary_button_shape"
+            android:text="@string/proceed_btn"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/toolbar_new_left"
+            layout="@layout/toolbar_new_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorGrayDark1"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/trans_amount"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/saleAmountText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorGrayDark1"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/tip_amount"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/tipAmountText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorGrayDark2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/total"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/totalAmountText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="$ 0.00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/font_medium" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonFirst"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="5 %"
+                        android:textSize="@dimen/font_medium" />
+
+                    <Button
+                        android:id="@+id/buttonSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="10 %"
+                        android:textSize="@dimen/font_medium" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonThird"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="15 %"
+                        android:textSize="@dimen/font_medium" />
+
+                    <Button
+                        android:id="@+id/buttonManual"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="@string/manual"
+                        android:textSize="@dimen/font_medium" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

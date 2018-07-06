@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_shadow"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/dataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_very_small"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/dataTextView"
+                android:textSize="@dimen/font_very_small"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/transaction_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeTextView"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/amount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

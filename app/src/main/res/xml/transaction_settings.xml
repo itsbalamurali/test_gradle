@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <CheckBoxPreference
+            android:key="@string/key_tip"
+            android:title="@string/tip"
+            android:layout="@layout/preference"
+            android:paddingStart="08dp"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="@string/key_discount"
+            android:title="@string/discount_title"
+            android:layout="@layout/preference"
+            android:paddingStart="08dp"
+            android:defaultValue="false">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="@string/key_balence_enquiry"
+            android:title="@string/balance_inquiry_title"
+            android:layout="@layout/preference"
+            android:paddingStart="08dp"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorSecondary">#b0c80a</color>
+    <!--<color name="colorAccent">#5e92cd</color>-->
+    <color name="colorAccent">#38ac47</color>
+
+    <color name="colorBlue">#11872f</color>
+    <color name="colorLightBlue">#38ac47</color>
+    <color name="colorWhite">#fff</color>
+    <color name="sucess">#b0c80a</color>
+    <color name="success_green">#c07ca500</color>
+    <color name="colorGrayDark1">#f6f6f6</color>
+    <color name="colorGrayDark2">#e2e2e2</color>
+    <color name="indigo_500">#454545</color>
+
+    <color name="zxinglib_transparent">#00000000</color>
+    <color name="zxinglib_viewfinder_frame">#ff000000</color>
+    <color name="zxinglib_viewfinder_laser">#ffff0000</color>
+    <color name="zxinglib_viewfinder_mask">#60000000</color>
+    <color name="zxinglib_result_view">#b0000000</color>
+    <color name="zxinglib_possible_result_points">#c0ffff00</color>
+    <color name="zxinglib_result_points">#c000ff00</color>
+    <color name="zxinglib_result_image_border">#ffffffff</color>
+
+    <color name="slider_view">#242E43</color>
+</resources>

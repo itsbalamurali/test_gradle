@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_new_left"
+            layout="@layout/toolbar_new_left" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="@dimen/header_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tap_card_mpos"
+                    android:textColor="#212B3E"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:text="@string/card_number"
+                    android:textSize="@dimen/font_very_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:descendantFocusability="beforeDescendants"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/panEditText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textSize="@dimen/font_medium" />
+
+                    <EditText
+                        android:id="@+id/panEditText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textSize="@dimen/font_medium" />
+
+                    <EditText
+                        android:id="@+id/panEditText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textSize="@dimen/font_medium" />
+
+                    <EditText
+                        android:id="@+id/panEditText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textSize="@dimen/font_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="@string/expiry_date"
+                        android:textSize="@dimen/font_very_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/expDateEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:inputType="number"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:maxLength="4"
+                        android:textSize="@dimen/font_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_holder_name"
+                        android:textSize="@dimen/font_very_small" />
+
+                    <EditText
+                        android:id="@+id/cardHolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="@string/allowed_characters"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:maxLines="1"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textSize="@dimen/font_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pin_cvv"
+                        android:paddingLeft="2dp"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/cvv"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:textSize="@dimen/font_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="05dp"
+                        android:text="@string/mc_visa_accepted" />
+
+                    <ImageView
+                        android:id="@+id/ImgMc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="05dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/img_ipsidy_blogo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llOkSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="92">
+
+
+                    <Button
+                        android:id="@+id/resetBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:background="@color/colorBlue"
+                        android:text="@string/reset_btn"
+                        android:onClick="test"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/proceedBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:background="@color/colorAccent"
+                        android:text="@string/proceed_btn"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_new_left"
+        layout="@layout/toolbar_new_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SurfaceView
+        android:id="@+id/zxinglib_preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_new_left"
+        android:layout_margin="4dp" />
+
+    <com.girmiti.mobilepos.qrcode.ViewfinderView
+        android:id="@+id/zxinglib_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cancel"
+        android:layout_alignParentStart="true"
+        android:background="@color/zxinglib_transparent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Scan QR Code or Tap Here to Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/transaction_result"
+        android:textColor="@color/colorSecondary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/error_code"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/errorCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/status"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/txn_date"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/txnDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/txn_ref"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/txnRefNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/not_applicable" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/auth_id"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/authId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/not_applicable" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/cg_ref"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/cgRefNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/not_applicable" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/merchant_code"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/merchantCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/not_applicable" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/customer_account_no"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/customerNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/total_amount"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/totAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

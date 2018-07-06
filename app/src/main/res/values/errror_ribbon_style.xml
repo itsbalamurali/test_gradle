@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimationErrorPopup">
+    	<item name="android:windowEnterAnimation">@anim/error_ribbon_show</item>
+    	<item name="android:windowExitAnimation">@anim/error_ribbon_hide</item>
+    </style>    
+</resources>

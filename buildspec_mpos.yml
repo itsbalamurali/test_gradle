@@ -1,0 +1,64 @@
+version: 0.2
+environment_variables:
+ plaintext:
+  android_sdk_zip: "tools_r25.2.3-linux.zip"
+  Domain: |
+      dev.ipsidy.net
+      qa.ipsidy.net
+      uat.ipsidy.net
+      www.ipsidy.net
+
+phases:
+  install:
+    commands:
+      - echo Install started on `date`
+      - echo Nothing to do in the install phase...
+      - apt-get update
+      - sudo apt-get -y install wget
+      - echo `gradle –version`
+      - sudo apt-get -y install dos2unix
+  pre_build:
+    commands:
+      - echo Pre Build started on `date`
+      - cd $CODEBUILD_SRC_DIR
+      - echo `which bash`
+      - echo `which java`
+      - echo $JAVA_HOME
+      - echo `ls -lrt $CODEBUILD_SRC_DIR`
+      - echo `ls -lrt /usr/lib/jvm/java-8-openjdk-amd64/bin`
+      - echo `uname`
+      - cd /opt
+      - wget -v -4 "https://dl.google.com/android/repository/$android_sdk_zip"
+      - unzip -q $android_sdk_zip -d /opt/android-sdk
+      - export ANDROID_HOME='/opt/android-sdk'
+      - export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin"
+      - cd /opt/android-sdk/tools/bin
+      - /opt/android-sdk/tools/bin/sdkmanager --list
+      - yes | /opt/android-sdk/tools/bin/sdkmanager "tools" "platform-tools" "build-tools;25.0.2" "sources;android-25" "extras;android;m2repository" "extras;google;m2repository" 
+      - /opt/android-sdk/tools/bin/sdkmanager --list
+      - echo sdk.dir=$ANDROID_HOME >> $CODEBUILD_SRC_DIR/local.properties
+      - echo ndk.dir=$ANDROID_HOME/ndk-bundle >> $CODEBUILD_SRC_DIR/local.properties
+  build:
+    commands:
+      - echo "Build started to package per environment on `date`"
+      - cd $CODEBUILD_SRC_DIR
+      - |
+        for mydomain in $Domain; do
+            sed -i '%s|^server_url.*|server_url=$mydomain/paygate/pg|g' app/src/main/res/raw/app.properties
+            chmod +x $CODEBUILD_SRC_DIR/gradlew
+            cd $CODEBUILD_SRC_DIR && dos2unix gradlew
+            cd $CODEBUILD_SRC_DIR && ./gradlew assembleDebug
+            mkdir -p /opt/build/apk/$mydomain
+            cp $CODEBUILD_SRC_DIR/app/build/outputs/apk/* /opt/build/apk/$mydomain/mpos_`date "+%Y%m%d"`.apk
+        done
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo `ls $CODEBUILD_SRC_DIR/app/build/outputs/apk`
+      - cd /opt/build && tar -zcvhf mposallenvironment.tar.gz apk
+      - echo `ls /opt/build`
+
+artifacts:
+  files:
+    - /opt/build/mposallenvironment.tar.gz
+  discard-paths: yes

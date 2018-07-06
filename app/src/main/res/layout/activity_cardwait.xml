@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/toolbar_cardwaiting"
+            layout="@layout/toolbar_new_left" />
+
+
+        <RelativeLayout
+            android:id="@+id/headerlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/header_padding">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/present_card"
+                android:textSize="@dimen/font_big" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/Please_tap_wallet" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerlyt"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/ImgMc"
+                android:layout_marginTop="41dp"
+                android:src="@drawable/img_mwallet_nfc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mwallet_accepted"
+                android:layout_above="@+id/imgVisa"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgVisa"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/waiting_for_card"
+                android:textSize="@dimen/font_medium" />
+
+            <ImageView
+                android:id="@+id/imgVisa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/img_ipsidy_blogo" />
+
+            <ImageView
+                android:id="@+id/ImgMc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/master_sml"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
